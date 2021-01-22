@@ -1,0 +1,35 @@
+/* Button component */
+.button {
+  display: inline-block;
+
+  padding: var(--rs-10) var(--rs-20) var(--rs-12) var(--rs-20);
+
+  background-color: var(--clr-bg-btn);
+  border: none;
+
+  font-size: var(--rs-20);
+  font-weight: 700;
+  color: var(--clr-bg);
+  text-align: center;
+  text-decoration: none;
+
+  transition: background 250ms ease-in-out, transform 150ms ease;
+
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--clr-btn-hover);
+}
+
+.button:focus {
+  outline: 1px solid var(--clr-bg);
+  outline-offset: -4px;
+}
+
+.button:active {
+  transform: scale(0.99);
+}

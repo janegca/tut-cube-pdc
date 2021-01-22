@@ -1,0 +1,34 @@
+/* -- Custom Properties -- */
+:root {
+  --clr-bg: hsl(217, 32%, 19%);
+  --clr-bg-btn: hsl(82, 29%, 56%);
+  --clr-fg: hsl(0, 0%, 95%);
+  --clr-hr: hsl(0, 0%, 80%);
+
+  --clr-btn-hover: white;
+  --clr-lnk-btn-outline: hsla(0, 0%, 100%, 0.4);
+
+  --ff-base: "Roboto", Arial, Helvetica, sans-serif;
+
+  --fw-bold: 700;
+
+  --lh-normal: 1.4;
+
+  --rs-08: 0.5rem;
+  --rs-10: 0.625rem;
+  --rs-12: 0.75rem;
+  --rs-16: 1rem;
+  --rs-20: 1.25rem;
+  --rs-24: 1.5rem;
+}
+
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

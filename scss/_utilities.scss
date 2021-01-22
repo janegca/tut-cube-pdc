@@ -1,0 +1,22 @@
+/* -- Utility Classes -- */
+
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+/* Flow utility, which I write about here: 
+     https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/ 
+ */
+.flow {
+  --flow-space: 1em;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+/* wrapper for link-button and panel */
+.terms {
+  --flow-space: 2rem;
+}

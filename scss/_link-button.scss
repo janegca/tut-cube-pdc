@@ -1,0 +1,55 @@
+/* Link button component */
+.link-button {
+  /* We hide this button by default / if there's no JS available */
+  display: none;
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  background-color: transparent;
+
+  font-size: var(--rs-16);
+  color: var(--clr-bg-btn);
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* When the link-button has a correct aria attribute, we can show it */
+.link-button[aria-expanded] {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link-button svg {
+  margin-left: var(--rs-08);
+
+  font-size: 0.8rem;
+
+  transition: all 250ms ease-in-out;
+  opacity: var(--rs-12);
+}
+
+.link-button[aria-expanded="true"] svg {
+  transform: rotate(-180deg);
+}
+
+.link-button:hover,
+.link-button:focus {
+  text-decoration: none;
+}
+
+.link-button:focus {
+  text-decoration: none;
+
+  outline: 1px solid var(--clr-lnk-btn-outline);
+  outline-offset: var(--rs-10);
+}
+
+.link-button:active {
+  transform: scale(0.99);
+}

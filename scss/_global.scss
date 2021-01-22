@@ -1,0 +1,32 @@
+/* -- Global Styles -- */
+body {
+  padding: var(--rs-24);
+
+  background-color: var(--clr-bg);
+
+  font-family: var(--ff-base);
+  color: var(--clr-fg);
+}
+
+p {
+  margin: 0;
+}
+
+article > * + * {
+  margin-top: var(--rs-24);
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--clr-hr);
+  margin: var(--rs-24) 0;
+}
+
+a:not([class]) {
+  color: currentcolor;
+}
+
+a:not([class]):hover,
+a:not([class]):focus {
+  text-decoration: none;
+}

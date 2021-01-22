@@ -1,0 +1,40 @@
+/* Panel component which is completely controlled by a valid sibling 
+   button element, such as the link button. We only conceal the content 
+   if its sibling button has the correct aria attribute, so we can enforce
+   accessibility and progressively enhance the UI */
+
+[aria-expanded] + .panel {
+  --panel-max-height: 500px;
+
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  max-height: 0;
+
+  visibility: hidden;
+
+  transition: all 200ms ease;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+[aria-expanded] + .panel .panel__inner {
+  padding-top: var(--rs-24);
+
+  transform: translateY(var(--rs-16));
+  transition: all 500ms ease;
+  transition-delay: 50ms;
+
+  opacity: 0;
+}
+
+[aria-expanded="true"] + .panel {
+  max-height: var(--panel-max-height);
+  visibility: visible;
+}
+
+[aria-expanded="true"] + .panel .panel__inner {
+  opacity: 1;
+  transform: translateY(0);
+}
