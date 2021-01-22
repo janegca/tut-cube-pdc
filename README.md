@@ -1,2 +1,2 @@
 # tut-cube-pdc
-CUBE tutorial: Progressive Disclosure Component
+[CUBE Tutorial](https://piccalil.li/tutorial/a-progressive-disclosure-component): Progressive Disclosure Component
